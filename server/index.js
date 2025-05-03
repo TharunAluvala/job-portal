@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 // Secret key for JWT
-const JWT_SECRET = process.env.JWT_SECRET; // In production, use environment variable
+const JWT_SECRET = 'your-secret-key'; // In production, use environment variable
 
 // In-memory database
 let jobs = [

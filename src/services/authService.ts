@@ -1,5 +1,5 @@
 import axios from 'axios';
-const url = import.meta.env.VITE_API_BASE_URL;
+const url = 'https://job-portal-backend.onrender.com/api';
 
 const API_URL = url;
 
