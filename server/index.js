@@ -6,8 +6,8 @@ dotenv.config();
 
 // Initialize Express app
 const app = express();
-const PORT = process.env.PORT || 5000; // Use Render's dynamic port or fallback to 5000
-console.log(`Using port: ${PORT}`); // This will show you the port Render assigns
+const port = process.env.PORT || 5000; // Use Render's dynamic port or fallback to 5000
+console.log(`Using port: ${port}`); // This will show you the port Render assigns
 
 // Middleware
 app.use(cors());
@@ -138,8 +138,8 @@ app.delete('/api/jobs/:id', authenticateToken, (req, res) => {
 });
 
 // Start the server
-app.listen(PORT, '0.0.0.0', () => {  // Bind to 0.0.0.0 so it's externally accessible
-  console.log(`Server running on port ${PORT}`);
+app.listen(port, '0.0.0.0', () => {  // Bind to 0.0.0.0 so it's externally accessible
+  console.log(`Server running on port ${port}`);
 });
 
 // For easy testing
