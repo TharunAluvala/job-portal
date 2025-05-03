@@ -1,5 +1,5 @@
 import axios from 'axios';
-const url = 'https://job-portal-backend.onrender.com/api';
+const url = 'https://job-portalserver.onrender.com/api';
 
 const API_URL = url;
 
